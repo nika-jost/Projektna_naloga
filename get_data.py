@@ -61,51 +61,44 @@ def main(filename: str = "dump.txt", total_number_of_anime: int = 50):
         writer.writerow(["Rank", "Name", "ID", "Link", "Score", "Episodes", "Type", "Start Date", "End Date"])
         
         for en_anime in animeji:
-            rank_pattern = r'<span class="lightLink top-anime-rank-text rank\d+">(\d+)</span>'
+            rank_pattern = r'<span class=".*top-anime-rank-text.*">(\d+)</span>'
             rank = re.search(pattern=rank_pattern, string=en_anime).group(1)
-            print(rank)
 
+            # TODO: Make more simpler
             name_pattern = r'<a href="https://myanimelist\.net/anime/\d+/[^"]+"[^>]*class="hoverinfo_trigger">(.*?)</a>'
             name = re.search(pattern=name_pattern, string=en_anime).group(1)
-            print(name)
 
-#            id_pattern = r''
-#            id = re.search(pattern=id_pattern, string=en_anime)
-#            print(id)
-#
-#            link_pattern = r''
-#            link = re.search(pattern=link_pattern, string=en_anime)
-#            print(link)
-#
-#            score_pattern = r''
-#            score = re.search(pattern=score_pattern, string=en_anime)
-#            print(score)
-#
-#            episodes_pattern = r''
-#            episodes = re.search(pattern=episodes_pattern, string=en_anime)
-#            print(episodes)
-#
-#            type_pattern = r''
-#            type = re.search(pattern=type_pattern, string=en_anime)
-#            print(type)
-#
-#            start_date_pattern = r''
-#            start_date = re.search(pattern=start_date_pattern, string=en_anime)
-#            print(start_date)
-#
-#            end_date_pattern = r''
-#            end_date = re.search(pattern=end_date_pattern, string=en_anime)
-#            print(end_date)
-#
-            filename = f"{rank}.html"
-            folder = "single_anime_html"
-            filepath = f"{folder}/{filename}"
-            with open(file=filepath, mode="w", encoding=encoding) as en_anime_file:
-                en_anime_file.write(en_anime)
+            id_pattern = r'<div class="detail"><div id="area(\d+)">' 
+            id = re.search(pattern=id_pattern, string=en_anime).group(1)
+
+            link_pattern = r'<a href="(https://myanimelist.net/anime/[^"]+)".*>.*</a>'
+            link = re.search(pattern=link_pattern, string=en_anime).group(1)
+
+            score_pattern = r'<span class=".*score-label.*">(\d+\.\d+)</span>'
+            score = re.search(pattern=score_pattern, string=en_anime).group(1)
+
+            episodes_pattern = r'([A-Za-z]+) *\((\d+) eps\)<br>'
+            type_ = re.search(pattern=episodes_pattern, string=en_anime).group(1)
+            episodes = re.search(pattern=episodes_pattern, string=en_anime).group(2)
+
+            date_pattern = r'([A-Za-z]{3} \d{4}) - (?:([A-Za-z]{3} \d{4})|\?)?<br>'
+            start_date = re.search(pattern=date_pattern, string=en_anime).group(1)
+            end_date_match = re.search(pattern=date_pattern, string=en_anime)
+            if end_date_match:
+                end_date = re.search(pattern=date_pattern, string=en_anime).group(2)
+            else:
+                end_date = None
+
+            # Ni potrebno, ker prof noče, da so v ločenih datotekah, ampak da je vse v eni.
+            # filename = f"{rank}.html"
+            # folder = "single_anime_html"
+            # filepath = f"{folder}/{filename}"
+            # with open(file=filepath, mode="w", encoding=encoding) as en_anime_file:
+            #     en_anime_file.write(en_anime)
             
 
             #writer.writerow([rank, name, id, link, score, episodes, type, start_date, end_date])
-            writer.writerow([rank, name])
+            writer.writerow([rank, score, name, id, link, type_, episodes, start_date, end_date])
 
         
 if __name__ == "__main__":
