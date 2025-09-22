@@ -3,103 +3,219 @@ import time
 import re
 import csv
 
+encoding = 'utf-8'
+headers = {'User-Agent': ('Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) ' 'AppleWebKit/537.36 (KHTML, like Gecko) ' 'Chrome/50.0.2661.102 Safari/537.36')}
 
-def main(filename: str = "dump.txt", total_number_of_anime: int = 50):
+
+
+def dump_data(filename: str = 'dump.txt', total_number_of_anime: int = 50):
     """
-    Zapiše HTML podatke, pridobljene z `requests`, v datoteko.
+    Zapiše HTML podatke, pridobljene z `requests`, v datoteko `filename`.
     Arguments:
         filename (str): Pot do datoteke, kamor se shrani vsebina strani.
         total_number_of_anime (int): Število animejev, ki jih želimo pridobiti (v korakih po 50).
     """
+    if not isinstance(filename, str) or not isinstance(total_number_of_anime, int): # isinstnce se uporablja za preveranje tipa stvari.
+        raise TypeError('filename mora biti str, total_number_of_anime mora biti int')
 
-    # Preverjanje tipov argumentov
-    if not isinstance(filename, str) or not isinstance(total_number_of_anime, int):
-        raise TypeError("filename mora biti str, total_number_of_anime mora biti int")
+    url = 'https://myanimelist.net/topanime.php?'
 
-    url = "https://myanimelist.net/topanime.php?"
-    # TODO: Preveri ali more biti headers kaj drugega ali je to uredu. Ali je to odvisno od napreave na kateri sem.
-    headers = {
-        "User-Agent": (
-            "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) "
-            "AppleWebKit/537.36 (KHTML, like Gecko) "
-            "Chrome/50.0.2661.102 Safari/537.36"
-        )
-    }
-    encoding = "utf-8"
-    anime_per_request = 50  # Število animejev na eno stran
+    anime_per_request = 50
+    pages = (total_number_of_anime + anime_per_request - 1) // anime_per_request # Zaokroževanje navzgor.
 
-    with open(file=filename, mode="w", encoding=encoding) as dump:
-        # TODO: Če število animejev ni deljivo z 50, dodaj še tiste ki so med n*50 in total_number_of_anime.
-        # TODO: Prenehaj s scrapeanjem, takrat ko anime nima več ocene, ali pa server verne error.
-        for index in range(0, total_number_of_anime+1-anime_per_request, anime_per_request):
-            new_url = f"{url}limit={index}"
-            print(f"Prenašam: {new_url}")
+    with open(file=filename, mode='w', encoding=encoding) as dump:
+        for page in range(pages):
+            zacetek = page * anime_per_request
+            new_url = f'{url}limit={zacetek}'
+            print(f'Prenašam: {new_url}')
 
             try:
-                response = requests.get(new_url, headers=headers, timeout=10) # Odgovor od serverja. Timeout, če ne dobi odgovora toliko časa vrne napako.
-                # Za pomoč pri errorjih: https://en.wikipedia.org/wiki/List_of_HTTP_status_codes
-                response.raise_for_status() # Preveri ali je error. Maš več različnih errorjev. Če je error se izvede koda pod exeptiononm.
-                site_content = response.text # Pridobi html kodo spletne strani.
-                dump.write(site_content + "\n\n") # Shranimo html kodo v datoteko.
+                response = requests.get(new_url, headers=headers, timeout=10) # Request je knjižnica za dostopanje spletnih strani. Pridobimo podatke ki so na spletnem mestu `new_url` v obliki HTML. Uporabimo header, zato, da povemu spletnemu mestu preko katere naprave dostopamo. Timout se uporabi v primeru, da pride no napake in nočemo da se program ustavi. Funkcija počaka 10 sekund in če ne dobi odgovora ali pride do errorja gre naprej. 
+                response.raise_for_status() # Preveri ali je prišlo do napake. Se izvede except spodaj.
+                site_content = response.text
+                dump.write(site_content + '\n\n')
             except requests.RequestException as e:
-                print(f"Napaka pri dostopu do {new_url}: {e}")
+                print(f'Napaka pri dostopu do {new_url}: {e}')
                 continue
 
-            # Kratek premor, da nas spletna stran ne blokira. Če pošljemo preveč requestov na isto spletno stran v kratem ćasu, bo stran mislila da jo napadamo in nas lahko blokira.
-            time.sleep(1)
+            time.sleep(1) # Če dostopamo do spletne strani prevečkrat v zelo kratkem času, bo spletna stran mislila, da jo hočemo podreti.
+    print(f"Sem prensel v datoteko: {filename}")
 
 
-    # TODO: Get the info of a single anime. Dump it into a file. Get the link from the dump.txt file. 
-    with open(file=filename, mode="r", encoding=encoding) as dump:
+def search_group(pattern, text):
+    match = re.search(pattern, text)
+    if match:
+        return match.group(1)
+    else:
+        return None
+
+
+def make_csv_from_dump(input_file: str = 'dump.txt', output_csv_file: str = 'anime_data.csv'):
+    """
+    CSV je format datoteke. Naredi tabelco iz podatkov. Na vrhu je tip podatka, ostalo so podatki.
+    Prebere in prefiltira (parsira) dump datoteko in shrani podatke o animejih v CSV.
+    """
+    with open(file=input_file, mode='r', encoding=encoding) as dump:
         dump_contents = dump.read()
         vzorec_animeja = r'<tr class="ranking-list">.*?<\/tr>'
-        animeji = re.findall(pattern=vzorec_animeja, string=dump_contents, flags=re.DOTALL)
+        animeji = re.findall(pattern=vzorec_animeja, string=dump_contents, flags=re.DOTALL) # Dobimo [anime0.html, anime1.html, anime2.html, ...]
+        # V regex-u ima pika pomen katerikoli znak razen nove vrstice. re.DOTALL pomeni, da je pika katerikoli znak ali nova vrstica.
 
-    csv_filename = "anime_data.csv"
-    with open(csv_filename, mode="w", encoding=encoding) as csv_file:
-        writer = csv.writer(csv_file)
-        writer.writerow(["Rank", "Name", "ID", "Link", "Score", "Episodes", "Type", "Start Date", "End Date"])
-        
+    with open(output_csv_file, mode='w', encoding=encoding, newline='') as csv_file:
+        writer = csv.writer(csv_file) # Kličeva funkcijo iz csv knjižnice, zato da ustvariva pisatelja.
+        writer.writerow(['Rank', 'Score', 'Name', 'ID', 'Link', 'Type', 'Episodes', 'Start Date', 'End Date'])
+
         for en_anime in animeji:
-            rank_pattern = r'<span class=".*top-anime-rank-text.*">(\d+)</span>'
-            rank = re.search(pattern=rank_pattern, string=en_anime).group(1)
+            rank = search_group(r'<span class=".*?top-anime-rank-text.*?">(\d+)</span>', en_anime)
+            name = search_group(r'<a href="https://myanimelist\.net/anime/\d+/[^"]+"[^>]*class="hoverinfo_trigger">(.*?)</a>', en_anime)
+            id_ = search_group(r'<div class="detail"><div id="area(\d+)">', en_anime)
+            link = search_group(r'<a href="(https://myanimelist.net/anime/[^\"]+)"', en_anime)
+            score = search_group(r'<span class=".*?score-label.*?">(\d+\.\d+)</span>', en_anime)
+            type_ = search_group(r'([A-Za-z]+) *\(\d+ eps\)<br>', en_anime)
+            episodes = search_group(r'[A-Za-z]+ *\((\d+) eps\)<br>', en_anime)
+            start_date = search_group(r'([A-Za-z]{3} \d{4}) - (?:[A-Za-z]{3} \d{4}|\?)?<br>', en_anime)
+            end_date   = search_group(r'[A-Za-z]{3} \d{4} - (?:([A-Za-z]{3} \d{4})|\?)<br>', en_anime)
 
-            # TODO: Make more simpler
-            name_pattern = r'<a href="https://myanimelist\.net/anime/\d+/[^"]+"[^>]*class="hoverinfo_trigger">(.*?)</a>'
-            name = re.search(pattern=name_pattern, string=en_anime).group(1)
+            if not score:
+                print(f'Preskočim anime brez ocene: {link}')
+                continue
 
-            id_pattern = r'<div class="detail"><div id="area(\d+)">' 
-            id = re.search(pattern=id_pattern, string=en_anime).group(1)
+            writer.writerow([rank, score, name, id_, link, type_, episodes, start_date, end_date])
 
-            link_pattern = r'<a href="(https://myanimelist.net/anime/[^"]+)".*>.*</a>'
-            link = re.search(pattern=link_pattern, string=en_anime).group(1)
+    print(f'CSV datoteka ustvarjena: {output_csv_file}')
 
-            score_pattern = r'<span class=".*score-label.*">(\d+\.\d+)</span>'
-            score = re.search(pattern=score_pattern, string=en_anime).group(1)
 
-            episodes_pattern = r'([A-Za-z]+) *\((\d+) eps\)<br>'
-            type_ = re.search(pattern=episodes_pattern, string=en_anime).group(1)
-            episodes = re.search(pattern=episodes_pattern, string=en_anime).group(2)
+def get_more_data(csv_file: str = 'anime_data.csv', output_file: str = 'anime_data_premium.csv'):
+    """
+    For each Link in the CSV, fetch the page, extract Status, and append the HTML to dump_file.
+    Prints the extracted Status (or 'N/A' if missing).
+    """
+    csv_updates = []
+    with open(csv_file, mode='r', encoding=encoding) as csv_file:
 
-            date_pattern = r'([A-Za-z]{3} \d{4}) - (?:([A-Za-z]{3} \d{4})|\?)?<br>'
-            start_date = re.search(pattern=date_pattern, string=en_anime).group(1)
-            end_date_match = re.search(pattern=date_pattern, string=en_anime)
-            if end_date_match:
-                end_date = re.search(pattern=date_pattern, string=en_anime).group(2)
-            else:
-                end_date = None
+        reader = csv.reader(csv_file)
 
-            # Ni potrebno, ker prof noče, da so v ločenih datotekah, ampak da je vse v eni.
-            # filename = f"{rank}.html"
-            # folder = "single_anime_html"
-            # filepath = f"{folder}/{filename}"
-            # with open(file=filepath, mode="w", encoding=encoding) as en_anime_file:
-            #     en_anime_file.write(en_anime)
-            
+        for i, row in enumerate(reader, start=2):
+            link = row[4]
+            if not link:
+                print(f'[{i}] No Link in row, skipping.')
+                continue
 
-            #writer.writerow([rank, name, id, link, score, episodes, type, start_date, end_date])
-            writer.writerow([rank, score, name, id, link, type_, episodes, start_date, end_date])
+            try:
+                response = requests.get(link, headers=headers, timeout=10)
+                response.raise_for_status()
+                content = response.text
 
-        
-if __name__ == "__main__":
-    main()
+                # TODO: Fix this it no work. The regex a problem
+                # Status
+                status_pattern = r'<span[^>]*>\s*Status:\s*</span>\s*([^<]+)'
+                status = re.search(status_pattern, content)
+                status = status.group(1).strip() if status else 'N/A'
+                row.append(status)
+
+                # Premiered
+                premiered_pattern = r'<span[^>]*>\s*Premiered:\s*</span>\s*([^<]+)'
+                premiered = re.search(premiered_pattern, content)
+                premiered = premiered.group(1).strip() if premiered else 'N/A'
+                row.append(premiered)
+
+                # Broadcast
+                broadcast_pattern = r'<span[^>]*>\s*Broadcast:\s*</span>\s*([^<]+)'
+                broadcast = re.search(broadcast_pattern, content)
+                broadcast = broadcast.group(1).strip() if broadcast else 'N/A'
+                row.append(broadcast)
+
+                # Producers
+                producers_pattern = r'<span[^>]*>\s*Producers:\s*</span>\s*([^<]+)'
+                producers = re.search(producers_pattern, content)
+                producers = producers.group(1).strip() if producers else 'N/A'
+                row.append(producers)
+
+                # Licensors
+                licensors_pattern = r'<span[^>]*>\s*Licensors:\s*</span>\s*([^<]+)'
+                licensors = re.search(licensors_pattern, content)
+                licensors = licensors.group(1).strip() if licensors else 'N/A'
+                row.append(licensors)
+
+                # Studios
+                studios_pattern = r'<span[^>]*>\s*Studios:\s*</span>\s*([^<]+)'
+                studios = re.search(studios_pattern, content)
+                studios = studios.group(1).strip() if studios else 'N/A'
+                row.append(studios)
+
+                # Source
+                source_pattern = r'<span[^>]*>\s*Source:\s*</span>\s*([^<]+)'
+                source = re.search(source_pattern, content)
+                source = source.group(1).strip() if source else 'N/A'
+                row.append(source)
+
+                # Genres
+                genres_pattern = r'<span[^>]*>\s*Genres:\s*</span>\s*([^<]+)'
+                genres = re.search(genres_pattern, content)
+                genres = genres.group(1).strip() if genres else 'N/A'
+                row.append(genres)
+
+                # Demographics
+                demographics_pattern = r'<span[^>]*>\s*Demographics:\s*</span>\s*([^<]+)'
+                demographics = re.search(demographics_pattern, content)
+                demographics = demographics.group(1).strip() if demographics else 'N/A'
+                row.append(demographics)
+
+                # Duration
+                duration_pattern = r'<span[^>]*>\s*Duration:\s*</span>\s*([^<]+)'
+                duration = re.search(duration_pattern, content)
+                duration = duration.group(1).strip() if duration else 'N/A'
+                row.append(duration)
+
+                # Rating
+                rating_pattern = r'<span[^>]*>\s*Rating:\s*</span>\s*([^<]+)'
+                rating = re.search(rating_pattern, content)
+                rating = rating.group(1).strip() if rating else 'N/A'
+                row.append(rating)
+
+                # Popularity
+                popularity_pattern = r'<span[^>]*>\s*Popularity:\s*</span>\s*([^<]+)'
+                popularity = re.search(popularity_pattern, content)
+                popularity = popularity.group(1).strip() if popularity else 'N/A'
+                row.append(popularity)
+
+                # Members
+                members_pattern = r'<span[^>]*>\s*Members:\s*</span>\s*([^<]+)'
+                members = re.search(members_pattern, content)
+                members = members.group(1).strip() if members else 'N/A'
+                row.append(members)
+
+                # Favorites
+                favorites_pattern = r'<span[^>]*>\s*Favorites:\s*</span>\s*([^<]+)'
+                favorites = re.search(favorites_pattern, content)
+                favorites = favorites.group(1).strip() if favorites else 'N/A'
+                row.append(favorites)
+
+            except requests.RequestException as e:
+                print(f'[{i}] Request failed for {link}: {e}')
+                continue
+
+            csv_updates.append(row)
+            print('Somethign is going on')
+
+    with open(output_file, mode='w', encoding=encoding, newline='') as csv_out:
+        writer = csv.writer(csv_out)
+        writer.writerow(['Rank', 'Score', 'Name', 'ID', 'Link', 'Type', 'Episodes', 'Start Date', 'End Date', 'Status', 'Premiered', 'Broadcast', 'Producers', 'Licensors', 'Studios', 'Source', 'Genres', 'Demographics', 'Duration', 'Rating', 'Popularity', 'Members', 'Favorites'])
+        for row in csv_updates:
+            writer.writerow(row)
+
+    print(f'Updated CSV written to {output_file}')
+
+
+def make_csv_from_more_dump(csv_file: str = 'anime_data.csv', dump_file: str = 'dump_premium.txt'):
+    # Read dump file
+    # Parse it
+    # Write to csv
+    pass
+
+
+# Poženemo funkcije
+
+dump_data(total_number_of_anime=100)
+make_csv_from_dump()
+get_more_data()
