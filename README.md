@@ -14,10 +14,7 @@ py -m pip install requests
 1. ONA najbolj gledan od TV in OVA.
 2. Razlika med end date in start datom pomeni da ima več ogledov.
 3. Razlika med end date in start datom pomeni da ima višjo oceno.
-4. Povprečni čas za izdelelvao epizode v razmerju z oceno. x os: (end date - start date) / episodes y os: rating
-5. Več ogledov višja ocena.
 6. Več epizod višja ocena.
-7. Kateri žaner je najbolj gledan?
 8. Katero leto je najbolj gledan?
 9. Katero leto ima najboljšo oceno?
 10. Death note je v 1% animejev po oceni.

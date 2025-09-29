@@ -41,61 +41,261 @@ Rank,Score,Name,ID,Link,Type,Episodes,Start Date,End Date
 40,8.77,Sen to Chihiro no Kamikakushi,199,https://myanimelist.net/anime/199/Sen_to_Chihiro_no_Kamikakushi,Movie,1,Jul 2001,Jul 2001
 41,8.77,Shingeki no Kyojin: The Final Season Part 2,48583,https://myanimelist.net/anime/48583/Shingeki_no_Kyojin__The_Final_Season_Part_2,TV,12,Jan 2022,Apr 2022
 42,8.77,Vinland Saga,37521,https://myanimelist.net/anime/37521/Vinland_Saga,TV,24,Jul 2019,Dec 2019
-43,8.76,Kimetsu no Yaiba Movie 1: Mugenjou-hen - Akaza Sairai,59192,https://myanimelist.net/anime/59192/Kimetsu_no_Yaiba_Movie_1__Mugenjou-hen_-_Akaza_Sairai,Movie,1,Jul 2025,Jul 2025
-44,8.76,Monogatari Series: Second Season,17074,https://myanimelist.net/anime/17074/Monogatari_Series__Second_Season,TV,26,Jul 2013,Dec 2013
-45,8.76,Ashita no Joe 2,2921,https://myanimelist.net/anime/2921/Ashita_no_Joe_2,TV,47,Oct 1980,Aug 1981
-46,8.75,Cowboy Bebop,1,https://myanimelist.net/anime/1/Cowboy_Bebop,TV,26,Apr 1998,Apr 1999
+43,8.76,Monogatari Series: Second Season,17074,https://myanimelist.net/anime/17074/Monogatari_Series__Second_Season,TV,26,Jul 2013,Dec 2013
+44,8.76,Ashita no Joe 2,2921,https://myanimelist.net/anime/2921/Ashita_no_Joe_2,TV,47,Oct 1980,Aug 1981
+45,8.75,Cowboy Bebop,1,https://myanimelist.net/anime/1/Cowboy_Bebop,TV,26,Apr 1998,Apr 1999
+46,8.75,Kimetsu no Yaiba Movie 1: Mugenjou-hen - Akaza Sairai,59192,https://myanimelist.net/anime/59192/Kimetsu_no_Yaiba_Movie_1__Mugenjou-hen_-_Akaza_Sairai,Movie,1,Jul 2025,Jul 2025
 47,8.74,Bocchi the Rock!,47917,https://myanimelist.net/anime/47917/Bocchi_the_Rock,TV,12,Oct 2022,Dec 2022
 48,8.73,Boku no Kokoro no Yabai Yatsu 2nd Season,55690,https://myanimelist.net/anime/55690/Boku_no_Kokoro_no_Yabai_Yatsu_2nd_Season,TV,13,Jan 2024,Mar 2024
-49,8.73,Jujutsu Kaisen 2nd Season,51009,https://myanimelist.net/anime/51009/Jujutsu_Kaisen_2nd_Season,TV,23,Jul 2023,Dec 2023
-50,8.73,Kaguya-sama wa Kokurasetai: First Kiss wa Owaranai,52198,https://myanimelist.net/anime/52198/Kaguya-sama_wa_Kokurasetai__First_Kiss_wa_Owaranai,Movie,1,Dec 2022,Dec 2022
-51,8.73,Kingdom 4th Season,50160,https://myanimelist.net/anime/50160/Kingdom_4th_Season,TV,26,Apr 2022,Oct 2022
-52,8.73,One Piece,21,https://myanimelist.net/anime/21/One_Piece,,,Oct 1999,
-53,8.72,Kingdom 5th Season,53223,https://myanimelist.net/anime/53223/Kingdom_5th_Season,TV,13,Jan 2024,Mar 2024
-54,8.72,Mushishi Zoku Shou 2nd Season,24701,https://myanimelist.net/anime/24701/Mushishi_Zoku_Shou_2nd_Season,TV,10,Oct 2014,Dec 2014
-55,8.72,Shiguang Dailiren,44074,https://myanimelist.net/anime/44074/Shiguang_Dailiren,ONA,11,Apr 2021,Jul 2021
-56,8.72,The First Slam Dunk,45649,https://myanimelist.net/anime/45649/The_First_Slam_Dunk,Movie,1,Dec 2022,Dec 2022
-57,8.72,Tu Bian Yingxiong X,53447,https://myanimelist.net/anime/53447/Tu_Bian_Yingxiong_X,ONA,24,Apr 2025,Sep 2025
-58,8.72,86 Part 2,48569,https://myanimelist.net/anime/48569/86_Part_2,TV,12,Oct 2021,Mar 2022
-59,8.72,Hibike! Euphonium 3,39894,https://myanimelist.net/anime/39894/Hibike_Euphonium_3,TV,13,Apr 2024,Jun 2024
-60,8.71,Code Geass: Hangyaku no Lelouch,1575,https://myanimelist.net/anime/1575/Code_Geass__Hangyaku_no_Lelouch,TV,25,Oct 2006,Jul 2007
-61,8.71,Kimetsu no Yaiba: Yuukaku-hen,47778,https://myanimelist.net/anime/47778/Kimetsu_no_Yaiba__Yuukaku-hen,TV,11,Dec 2021,Feb 2022
-62,8.71,Mob Psycho 100 III,50172,https://myanimelist.net/anime/50172/Mob_Psycho_100_III,TV,12,Oct 2022,Dec 2022
+49,8.73,Tu Bian Yingxiong X,53447,https://myanimelist.net/anime/53447/Tu_Bian_Yingxiong_X,ONA,24,Apr 2025,Sep 2025
+50,8.73,Jujutsu Kaisen 2nd Season,51009,https://myanimelist.net/anime/51009/Jujutsu_Kaisen_2nd_Season,TV,23,Jul 2023,Dec 2023
+51,8.73,Kaguya-sama wa Kokurasetai: First Kiss wa Owaranai,52198,https://myanimelist.net/anime/52198/Kaguya-sama_wa_Kokurasetai__First_Kiss_wa_Owaranai,Movie,1,Dec 2022,Dec 2022
+52,8.73,Kingdom 4th Season,50160,https://myanimelist.net/anime/50160/Kingdom_4th_Season,TV,26,Apr 2022,Oct 2022
+53,8.73,One Piece,21,https://myanimelist.net/anime/21/One_Piece,,,Oct 1999,
+54,8.72,Kingdom 5th Season,53223,https://myanimelist.net/anime/53223/Kingdom_5th_Season,TV,13,Jan 2024,Mar 2024
+55,8.72,Mushishi Zoku Shou 2nd Season,24701,https://myanimelist.net/anime/24701/Mushishi_Zoku_Shou_2nd_Season,TV,10,Oct 2014,Dec 2014
+56,8.72,86 Part 2,48569,https://myanimelist.net/anime/48569/86_Part_2,TV,12,Oct 2021,Mar 2022
+57,8.72,Hibike! Euphonium 3,39894,https://myanimelist.net/anime/39894/Hibike_Euphonium_3,TV,13,Apr 2024,Jun 2024
+58,8.72,Shiguang Dailiren,44074,https://myanimelist.net/anime/44074/Shiguang_Dailiren,ONA,11,Apr 2021,Jul 2021
+59,8.72,The First Slam Dunk,45649,https://myanimelist.net/anime/45649/The_First_Slam_Dunk,Movie,1,Dec 2022,Dec 2022
+60,8.71,Kimetsu no Yaiba: Yuukaku-hen,47778,https://myanimelist.net/anime/47778/Kimetsu_no_Yaiba__Yuukaku-hen,TV,11,Dec 2021,Feb 2022
+61,8.71,Mob Psycho 100 III,50172,https://myanimelist.net/anime/50172/Mob_Psycho_100_III,TV,12,Oct 2022,Dec 2022
+62,8.71,Code Geass: Hangyaku no Lelouch,1575,https://myanimelist.net/anime/1575/Code_Geass__Hangyaku_no_Lelouch,TV,25,Oct 2006,Jul 2007
 63,8.70,Bleach: Sennen Kessen-hen - Ketsubetsu-tan,53998,https://myanimelist.net/anime/53998/Bleach__Sennen_Kessen-hen_-_Ketsubetsu-tan,TV,13,Jul 2023,Sep 2023
 64,8.70,Chi. Chikyuu no Undou ni Tsuite,52215,https://myanimelist.net/anime/52215/Chi_Chikyuu_no_Undou_ni_Tsuite,TV,25,Oct 2024,Mar 2025
 65,8.70,Shouwa Genroku Rakugo Shinjuu: Sukeroku Futatabi-hen,33095,https://myanimelist.net/anime/33095/Shouwa_Genroku_Rakugo_Shinjuu__Sukeroku_Futatabi-hen,TV,12,Jan 2017,Mar 2017
 66,8.69,Rurouni Kenshin: Meiji Kenkaku Romantan - Tsuioku-hen,44,https://myanimelist.net/anime/44/Rurouni_Kenshin__Meiji_Kenkaku_Romantan_-_Tsuioku-hen,OVA,4,Feb 1999,Sep 1999
 67,8.69,Violet Evergarden,33352,https://myanimelist.net/anime/33352/Violet_Evergarden,TV,13,Jan 2018,Apr 2018
-68,8.69,Kaoru Hana wa Rin to Saku,59845,https://myanimelist.net/anime/59845/Kaoru_Hana_wa_Rin_to_Saku,TV,13,Jul 2025,Sep 2025
-69,8.68,Mo Dao Zu Shi: Wanjie Pian,40434,https://myanimelist.net/anime/40434/Mo_Dao_Zu_Shi__Wanjie_Pian,ONA,12,Aug 2021,Oct 2021
-70,8.68,Mushishi Zoku Shou,21939,https://myanimelist.net/anime/21939/Mushishi_Zoku_Shou,TV,10,Apr 2014,Jun 2014
-71,8.68,Great Teacher Onizuka,245,https://myanimelist.net/anime/245/Great_Teacher_Onizuka,TV,43,Jun 1999,Sep 2000
-72,8.67,Bleach: Sennen Kessen-hen - Soukoku-tan,56784,https://myanimelist.net/anime/56784/Bleach__Sennen_Kessen-hen_-_Soukoku-tan,TV,14,Oct 2024,Dec 2024
-73,8.65,Grand Blue Season 2,59986,https://myanimelist.net/anime/59986/Grand_Blue_Season_2,TV,12,Jul 2025,Sep 2025
+68,8.68,Great Teacher Onizuka,245,https://myanimelist.net/anime/245/Great_Teacher_Onizuka,TV,43,Jun 1999,Sep 2000
+69,8.68,Kaoru Hana wa Rin to Saku,59845,https://myanimelist.net/anime/59845/Kaoru_Hana_wa_Rin_to_Saku,TV,13,Jul 2025,Sep 2025
+70,8.68,Mo Dao Zu Shi: Wanjie Pian,40434,https://myanimelist.net/anime/40434/Mo_Dao_Zu_Shi__Wanjie_Pian,ONA,12,Aug 2021,Oct 2021
+71,8.68,Mushishi Zoku Shou,21939,https://myanimelist.net/anime/21939/Mushishi_Zoku_Shou,TV,10,Apr 2014,Jun 2014
+72,8.67,Mononoke Hime,164,https://myanimelist.net/anime/164/Mononoke_Hime,Movie,1,Jul 1997,Jul 1997
+73,8.67,Bleach: Sennen Kessen-hen - Soukoku-tan,56784,https://myanimelist.net/anime/56784/Bleach__Sennen_Kessen-hen_-_Soukoku-tan,TV,14,Oct 2024,Dec 2024
 74,8.67,Hajime no Ippo: New Challenger,5258,https://myanimelist.net/anime/5258/Hajime_no_Ippo__New_Challenger,TV,26,Jan 2009,Jul 2009
 75,8.67,Howl no Ugoku Shiro,431,https://myanimelist.net/anime/431/Howl_no_Ugoku_Shiro,Movie,1,Nov 2004,Nov 2004
-76,8.67,Mononoke Hime,164,https://myanimelist.net/anime/164/Mononoke_Hime,Movie,1,Jul 1997,Jul 1997
+76,8.66,Guimi Zhi Zhu: Xiaochou Pian,49818,https://myanimelist.net/anime/49818/Guimi_Zhi_Zhu__Xiaochou_Pian,ONA,13,Jun 2025,Aug 2025
 77,8.66,Monogatari Series: Off &amp; Monster Season,57864,https://myanimelist.net/anime/57864/Monogatari_Series__Off___Monster_Season,ONA,14,Jul 2024,Oct 2024
-78,8.66,Guimi Zhi Zhu: Xiaochou Pian,49818,https://myanimelist.net/anime/49818/Guimi_Zhi_Zhu__Xiaochou_Pian,ONA,13,Jun 2025,Aug 2025
-79,8.65,Shiguang Dailiren II,49413,https://myanimelist.net/anime/49413/Shiguang_Dailiren_II,ONA,12,Jul 2023,Sep 2023
-80,8.65,Tian Guan Cifu Er,50399,https://myanimelist.net/anime/50399/Tian_Guan_Cifu_Er,ONA,12,Oct 2023,Jan 2024
-81,8.65,Mushishi,457,https://myanimelist.net/anime/457/Mushishi,TV,26,Oct 2005,Jun 2006
-82,8.65,Ore dake Level Up na Ken Season 2: Arise from the Shadow,58567,https://myanimelist.net/anime/58567/Ore_dake_Level_Up_na_Ken_Season_2__Arise_from_the_Shadow,TV,13,Jan 2025,Mar 2025
-83,8.64,Odd Taxi,46102,https://myanimelist.net/anime/46102/Odd_Taxi,TV,13,Apr 2021,Jun 2021
-84,8.64,Fate/stay night Movie: Heaven&#039;s Feel - III. Spring Song,33050,https://myanimelist.net/anime/33050/Fate_stay_night_Movie__Heavens_Feel_-_III_Spring_Song,Movie,1,Aug 2020,Aug 2020
-85,8.64,Shigatsu wa Kimi no Uso,23273,https://myanimelist.net/anime/23273/Shigatsu_wa_Kimi_no_Uso,TV,22,Oct 2014,Mar 2015
-86,8.64,Shingeki no Kyojin Season 3,35760,https://myanimelist.net/anime/35760/Shingeki_no_Kyojin_Season_3,TV,12,Jul 2018,Oct 2018
-87,8.64,Tengen Toppa Gurren Lagann,2001,https://myanimelist.net/anime/2001/Tengen_Toppa_Gurren_Lagann,TV,27,Apr 2007,Sep 2007
+78,8.65,Mushishi,457,https://myanimelist.net/anime/457/Mushishi,TV,26,Oct 2005,Jun 2006
+79,8.65,Ore dake Level Up na Ken Season 2: Arise from the Shadow,58567,https://myanimelist.net/anime/58567/Ore_dake_Level_Up_na_Ken_Season_2__Arise_from_the_Shadow,TV,13,Jan 2025,Mar 2025
+80,8.65,Shiguang Dailiren II,49413,https://myanimelist.net/anime/49413/Shiguang_Dailiren_II,ONA,12,Jul 2023,Sep 2023
+81,8.65,Tian Guan Cifu Er,50399,https://myanimelist.net/anime/50399/Tian_Guan_Cifu_Er,ONA,12,Oct 2023,Jan 2024
+82,8.64,Shigatsu wa Kimi no Uso,23273,https://myanimelist.net/anime/23273/Shigatsu_wa_Kimi_no_Uso,TV,22,Oct 2014,Mar 2015
+83,8.64,Shingeki no Kyojin Season 3,35760,https://myanimelist.net/anime/35760/Shingeki_no_Kyojin_Season_3,TV,12,Jul 2018,Oct 2018
+84,8.64,Tengen Toppa Gurren Lagann,2001,https://myanimelist.net/anime/2001/Tengen_Toppa_Gurren_Lagann,TV,27,Apr 2007,Sep 2007
+85,8.64,Odd Taxi,46102,https://myanimelist.net/anime/46102/Odd_Taxi,TV,13,Apr 2021,Jun 2021
+86,8.64,Fate/stay night Movie: Heaven&#039;s Feel - III. Spring Song,33050,https://myanimelist.net/anime/33050/Fate_stay_night_Movie__Heavens_Feel_-_III_Spring_Song,Movie,1,Aug 2020,Aug 2020
+87,8.63,Uma Musume: Pretty Derby - Shin Jidai no Tobira,57647,https://myanimelist.net/anime/57647/Uma_Musume__Pretty_Derby_-_Shin_Jidai_no_Tobira,Movie,1,May 2024,May 2024
 88,8.63,Look Back,58125,https://myanimelist.net/anime/58125/Look_Back,Movie,1,Jun 2024,Jun 2024
 89,8.63,Made in Abyss,34599,https://myanimelist.net/anime/34599/Made_in_Abyss,TV,13,Jul 2017,Sep 2017
 90,8.63,Natsume Yuujinchou Shi,11665,https://myanimelist.net/anime/11665/Natsume_Yuujinchou_Shi,TV,13,Jan 2012,Mar 2012
 91,8.62,Kaguya-sama wa Kokurasetai? Tensai-tachi no Renai Zunousen,40591,https://myanimelist.net/anime/40591/Kaguya-sama_wa_Kokurasetai_Tensai-tachi_no_Renai_Zunousen,TV,12,Apr 2020,Jun 2020
 92,8.62,Mushoku Tensei: Isekai Ittara Honki Dasu Part 2,45576,https://myanimelist.net/anime/45576/Mushoku_Tensei__Isekai_Ittara_Honki_Dasu_Part_2,TV,12,Oct 2021,Dec 2021
 93,8.62,Ping Pong the Animation,22135,https://myanimelist.net/anime/22135/Ping_Pong_the_Animation,TV,11,Apr 2014,Jun 2014
-94,8.62,Uma Musume: Pretty Derby - Shin Jidai no Tobira,57647,https://myanimelist.net/anime/57647/Uma_Musume__Pretty_Derby_-_Shin_Jidai_no_Tobira,Movie,1,May 2024,May 2024
+94,8.62,Cyberpunk: Edgerunners,42310,https://myanimelist.net/anime/42310/Cyberpunk__Edgerunners,ONA,10,Sep 2022,Sep 2022
 95,8.62,Death Note,1535,https://myanimelist.net/anime/1535/Death_Note,TV,37,Oct 2006,Jun 2007
 96,8.62,Haikyuu!! Second Season,28891,https://myanimelist.net/anime/28891/Haikyuu_Second_Season,TV,25,Oct 2015,Mar 2016
 97,8.61,Bungou Stray Dogs 5th Season,54898,https://myanimelist.net/anime/54898/Bungou_Stray_Dogs_5th_Season,TV,11,Jul 2023,Sep 2023
-98,8.61,Cyberpunk: Edgerunners,42310,https://myanimelist.net/anime/42310/Cyberpunk__Edgerunners,ONA,10,Sep 2022,Sep 2022
-99,8.61,Haikyuu!! Movie: Gomisuteba no Kessen,52742,https://myanimelist.net/anime/52742/Haikyuu_Movie__Gomisuteba_no_Kessen,Movie,1,Feb 2024,Feb 2024
-100,8.61,Hajime no Ippo: Rising,19647,https://myanimelist.net/anime/19647/Hajime_no_Ippo__Rising,TV,25,Oct 2013,Mar 2014
+98,8.61,Haikyuu!! Movie: Gomisuteba no Kessen,52742,https://myanimelist.net/anime/52742/Haikyuu_Movie__Gomisuteba_no_Kessen,Movie,1,Feb 2024,Feb 2024
+99,8.61,Hajime no Ippo: Rising,19647,https://myanimelist.net/anime/19647/Hajime_no_Ippo__Rising,TV,25,Oct 2013,Mar 2014
+100,8.61,Natsume Yuujinchou Roku,34591,https://myanimelist.net/anime/34591/Natsume_Yuujinchou_Roku,TV,11,Apr 2017,Jun 2017
+101,8.60,Kenpuu Denki Berserk,33,https://myanimelist.net/anime/33/Kenpuu_Denki_Berserk,TV,25,Oct 1997,Apr 1998
+102,8.60,Made in Abyss Movie 3: Fukaki Tamashii no Reimei,36862,https://myanimelist.net/anime/36862/Made_in_Abyss_Movie_3__Fukaki_Tamashii_no_Reimei,Movie,1,Jan 2020,Jan 2020
+103,8.60,Made in Abyss: Retsujitsu no Ougonkyou,41084,https://myanimelist.net/anime/41084/Made_in_Abyss__Retsujitsu_no_Ougonkyou,TV,12,Jul 2022,Sep 2022
+104,8.60,Dungeon Meshi,52701,https://myanimelist.net/anime/52701/Dungeon_Meshi,TV,24,Jan 2024,Jun 2024
+105,8.60,Tengen Toppa Gurren Lagann Movie 2: Lagann-hen,4565,https://myanimelist.net/anime/4565/Tengen_Toppa_Gurren_Lagann_Movie_2__Lagann-hen,Movie,1,Apr 2009,Apr 2009
+106,8.59,Seishun Buta Yarou wa Yumemiru Shoujo no Yume wo Minai,38329,https://myanimelist.net/anime/38329/Seishun_Buta_Yarou_wa_Yumemiru_Shoujo_no_Yume_wo_Minai,Movie,1,Jun 2019,Jun 2019
+107,8.59,Suzumiya Haruhi no Shoushitsu,7311,https://myanimelist.net/anime/7311/Suzumiya_Haruhi_no_Shoushitsu,Movie,1,Feb 2010,Feb 2010
+108,8.58,Shin Evangelion Movie:||,3786,https://myanimelist.net/anime/3786/Shin_Evangelion_Movie_||,Movie,1,Mar 2021,Mar 2021
+109,8.58,JoJo no Kimyou na Bouken Part 5: Ougon no Kaze,37991,https://myanimelist.net/anime/37991/JoJo_no_Kimyou_na_Bouken_Part_5__Ougon_no_Kaze,TV,39,Oct 2018,Jul 2019
+110,8.58,Mushishi Zoku Shou: Suzu no Shizuku,28957,https://myanimelist.net/anime/28957/Mushishi_Zoku_Shou__Suzu_no_Shizuku,Movie,1,May 2015,May 2015
+111,8.59,Chainsaw Man Movie: Reze-hen,57555,https://myanimelist.net/anime/57555/Chainsaw_Man_Movie__Reze-hen,Movie,1,Sep 2025,Sep 2025
+112,8.57,Nana,877,https://myanimelist.net/anime/877/Nana,TV,47,Apr 2006,Mar 2007
+113,8.57,Natsume Yuujinchou Shichi,55823,https://myanimelist.net/anime/55823/Natsume_Yuujinchou_Shichi,TV,12,Oct 2024,Dec 2024
+114,8.56,Kizumonogatari II: Nekketsu-hen,31757,https://myanimelist.net/anime/31757/Kizumonogatari_II__Nekketsu-hen,Movie,1,Aug 2016,Aug 2016
+115,8.56,Natsume Yuujinchou Go,32983,https://myanimelist.net/anime/32983/Natsume_Yuujinchou_Go,TV,11,Oct 2016,Dec 2016
+116,8.56,Natsume Yuujinchou San,10379,https://myanimelist.net/anime/10379/Natsume_Yuujinchou_San,TV,13,Jul 2011,Sep 2011
+117,8.56,Ookami Kodomo no Ame to Yuki,12355,https://myanimelist.net/anime/12355/Ookami_Kodomo_no_Ame_to_Yuki,Movie,1,Jul 2012,Jul 2012
+118,8.56,Shingeki no Kyojin,16498,https://myanimelist.net/anime/16498/Shingeki_no_Kyojin,TV,25,Apr 2013,Sep 2013
+119,8.56,"Shinseiki Evangelion Movie: Air/Magokoro wo, Kimi ni",32,https://myanimelist.net/anime/32/Shinseiki_Evangelion_Movie__Air_Magokoro_wo_Kimi_ni,Movie,1,Jul 1997,Jul 1997
+120,8.56,Uma Musume: Cinderella Gray,59636,https://myanimelist.net/anime/59636/Uma_Musume__Cinderella_Gray,TV,13,Apr 2025,Jun 2025
+121,8.56,[Oshi no Ko],52034,https://myanimelist.net/anime/52034/Oshi_no_Ko,TV,11,Apr 2023,Jun 2023
+122,8.56,Doupo Cangqiong: San Nian Zhi Yue,49701,https://myanimelist.net/anime/49701/Doupo_Cangqiong__San_Nian_Zhi_Yue,ONA,13,Oct 2021,Jan 2022
+123,8.56,Haikyuu!! To the Top Part 2,40776,https://myanimelist.net/anime/40776/Haikyuu_To_the_Top_Part_2,TV,12,Oct 2020,Dec 2020
+124,8.55,Grand Blue Season 2,59986,https://myanimelist.net/anime/59986/Grand_Blue_Season_2,TV,12,Jul 2025,Sep 2025
+125,8.55,Kimetsu no Yaiba Movie: Mugen Ressha-hen,40456,https://myanimelist.net/anime/40456/Kimetsu_no_Yaiba_Movie__Mugen_Ressha-hen,Movie,1,Oct 2020,Oct 2020
+126,8.55,Kimi no Suizou wo Tabetai,36098,https://myanimelist.net/anime/36098/Kimi_no_Suizou_wo_Tabetai,Movie,1,Sep 2018,Sep 2018
+127,8.55,Perfect Blue,437,https://myanimelist.net/anime/437/Perfect_Blue,Movie,1,Feb 1998,Feb 1998
+128,8.55,Shouwa Genroku Rakugo Shinjuu,28735,https://myanimelist.net/anime/28735/Shouwa_Genroku_Rakugo_Shinjuu,TV,13,Jan 2016,Apr 2016
+129,8.55,Slam Dunk,170,https://myanimelist.net/anime/170/Slam_Dunk,TV,101,Oct 1993,Mar 1996
+130,8.55,Yojouhan Shinwa Taikei,7785,https://myanimelist.net/anime/7785/Yojouhan_Shinwa_Taikei,TV,11,Apr 2010,Jul 2010
+131,8.55,[Oshi no Ko] 2nd Season,55791,https://myanimelist.net/anime/55791/Oshi_no_Ko_2nd_Season,TV,13,Jul 2024,Oct 2024
+132,8.54,Steins;Gate 0,30484,https://myanimelist.net/anime/30484/Steins_Gate_0,TV,23,Apr 2018,Sep 2018
+133,8.54,Fate/Zero 2nd Season,11741,https://myanimelist.net/anime/11741/Fate_Zero_2nd_Season,TV,12,Apr 2012,Jun 2012
+134,8.54,Jujutsu Kaisen,40748,https://myanimelist.net/anime/40748/Jujutsu_Kaisen,TV,24,Oct 2020,Mar 2021
+135,8.53,Shingeki no Kyojin Season 2,25777,https://myanimelist.net/anime/25777/Shingeki_no_Kyojin_Season_2,TV,12,Apr 2017,Jun 2017
+136,8.53,Zoku Natsume Yuujinchou,5300,https://myanimelist.net/anime/5300/Zoku_Natsume_Yuujinchou,TV,13,Jan 2009,Mar 2009
+137,8.53,Dandadan 2nd Season,60543,https://myanimelist.net/anime/60543/Dandadan_2nd_Season,TV,12,Jul 2025,Sep 2025
+138,8.53,Fruits Basket 2nd Season,40417,https://myanimelist.net/anime/40417/Fruits_Basket_2nd_Season,TV,25,Apr 2020,Sep 2020
+139,8.53,Hotaru no Haka,578,https://myanimelist.net/anime/578/Hotaru_no_Haka,Movie,1,Apr 1988,Apr 1988
+140,8.52,Bakuman. 3rd Season,12365,https://myanimelist.net/anime/12365/Bakuman_3rd_Season,TV,25,Oct 2012,Mar 2013
+141,8.52,Gintama Movie 1: Shinyaku Benizakura-hen,7472,https://myanimelist.net/anime/7472/Gintama_Movie_1__Shinyaku_Benizakura-hen,Movie,1,Apr 2010,Apr 2010
+142,8.52,JoJo no Kimyou na Bouken Part 6: Stone Ocean Part 3,53273,https://myanimelist.net/anime/53273/JoJo_no_Kimyou_na_Bouken_Part_6__Stone_Ocean_Part_3,ONA,14,Dec 2022,Dec 2022
+143,8.52,Mushishi: Hihamukage,21329,https://myanimelist.net/anime/21329/Mushishi__Hihamukage,Special,1,Jan 2014,Jan 2014
+144,8.52,Samurai Champloo,205,https://myanimelist.net/anime/205/Samurai_Champloo,TV,26,May 2004,Mar 2005
+145,8.51,Shoujo☆Kageki Revue Starlight Movie,40664,https://myanimelist.net/anime/40664/Shoujo☆Kageki_Revue_Starlight_Movie,Movie,1,Jun 2021,Jun 2021
+146,8.51,Gintama. Porori-hen,35843,https://myanimelist.net/anime/35843/Gintama_Porori-hen,TV,13,Oct 2017,Dec 2017
+147,8.51,Kara no Kyoukai Movie 5: Mujun Rasen,4282,https://myanimelist.net/anime/4282/Kara_no_Kyoukai_Movie_5__Mujun_Rasen,Movie,1,Aug 2008,Aug 2008
+148,8.51,Koukaku Kidoutai: Stand Alone Complex 2nd GIG,801,https://myanimelist.net/anime/801/Koukaku_Kidoutai__Stand_Alone_Complex_2nd_GIG,TV,26,Jan 2004,Jan 2005
+149,8.51,Nezha Zhi Mo Tong Nao Hai,60544,https://myanimelist.net/anime/60544/Nezha_Zhi_Mo_Tong_Nao_Hai,Movie,1,Jan 2025,Jan 2025
+150,8.50,JoJo no Kimyou na Bouken Part 4: Diamond wa Kudakenai,31933,https://myanimelist.net/anime/31933/JoJo_no_Kimyou_na_Bouken_Part_4__Diamond_wa_Kudakenai,TV,39,Apr 2016,Dec 2016
+151,8.50,Sora yori mo Tooi Basho,35839,https://myanimelist.net/anime/35839/Sora_yori_mo_Tooi_Basho,TV,13,Jan 2018,Mar 2018
+152,8.50,Yuru Camp△ Season 2,38474,https://myanimelist.net/anime/38474/Yuru_Camp△_Season_2,TV,13,Jan 2021,Apr 2021
+153,8.49,Tian Guan Cifu Special,44070,https://myanimelist.net/anime/44070/Tian_Guan_Cifu_Special,ONA,1,Feb 2021,Feb 2021
+154,8.49,Mahou Shoujo Madoka★Magica Movie 3: Hangyaku no Monogatari,11981,https://myanimelist.net/anime/11981/Mahou_Shoujo_Madoka★Magica_Movie_3__Hangyaku_no_Monogatari,Movie,1,Oct 2013,Oct 2013
+155,8.49,Mob Psycho 100,32182,https://myanimelist.net/anime/32182/Mob_Psycho_100,TV,12,Jul 2016,Sep 2016
+156,8.49,Ousama Ranking,40834,https://myanimelist.net/anime/40834/Ousama_Ranking,TV,23,Oct 2021,Mar 2022
+157,8.49,Dr. Stone: Science Future Part 2,61322,https://myanimelist.net/anime/61322/Dr_Stone__Science_Future_Part_2,TV,12,Jul 2025,Sep 2025
+158,8.48,Uchuu Kyoudai,12431,https://myanimelist.net/anime/12431/Uchuu_Kyoudai,TV,99,Apr 2012,Mar 2014
+159,8.48,Yakusoku no Neverland,37779,https://myanimelist.net/anime/37779/Yakusoku_no_Neverland,TV,12,Jan 2019,Mar 2019
+160,8.48,One Punch Man,30276,https://myanimelist.net/anime/30276/One_Punch_Man,TV,12,Oct 2015,Dec 2015
+161,8.47,Nichijou,10165,https://myanimelist.net/anime/10165/Nichijou,TV,26,Apr 2011,Sep 2011
+162,8.47,Ansatsu Kyoushitsu 2nd Season,30654,https://myanimelist.net/anime/30654/Ansatsu_Kyoushitsu_2nd_Season,TV,25,Jan 2016,Jul 2016
+163,8.47,Aria the Origination,3297,https://myanimelist.net/anime/3297/Aria_the_Origination,TV,13,Jan 2008,Apr 2008
+164,8.47,Dandadan,57334,https://myanimelist.net/anime/57334/Dandadan,TV,12,Oct 2024,Dec 2024
+165,8.47,Fate/stay night Movie: Heaven&#039;s Feel - II. Lost Butterfly,33049,https://myanimelist.net/anime/33049/Fate_stay_night_Movie__Heavens_Feel_-_II_Lost_Butterfly,Movie,1,Jan 2019,Jan 2019
+166,8.47,Summertime Render,47194,https://myanimelist.net/anime/47194/Summertime_Render,TV,25,Apr 2022,Sep 2022
+167,8.47,Tian Guan Cifu Short Film,60988,https://myanimelist.net/anime/60988/Tian_Guan_Cifu_Short_Film,,,Feb 2025,
+168,8.46,Yuu☆Yuu☆Hakusho,392,https://myanimelist.net/anime/392/Yuu☆Yuu☆Hakusho,TV,112,Oct 1992,Jan 1995
+169,8.46,Mo Dao Zu Shi,37208,https://myanimelist.net/anime/37208/Mo_Dao_Zu_Shi,ONA,15,Jul 2018,Oct 2018
+170,8.46,Mo Dao Zu Shi: Xian Yun Pian,38450,https://myanimelist.net/anime/38450/Mo_Dao_Zu_Shi__Xian_Yun_Pian,ONA,8,Aug 2019,Sep 2019
+171,8.46,Rainbow: Nisha Rokubou no Shichinin,6114,https://myanimelist.net/anime/6114/Rainbow__Nisha_Rokubou_no_Shichinin,TV,26,Apr 2010,Sep 2010
+172,8.46,Gintama: The Semi-Final,44087,https://myanimelist.net/anime/44087/Gintama__The_Semi-Final,Special,2,Jan 2021,Jan 2021
+173,8.46,Given Movie 3: Umi e,58222,https://myanimelist.net/anime/58222/Given_Movie_3__Umi_e,Movie,1,Sep 2024,Sep 2024
+174,8.45,Banana Fish,36649,https://myanimelist.net/anime/36649/Banana_Fish,TV,24,Jul 2018,Dec 2018
+175,8.45,Chihayafuru 3,37379,https://myanimelist.net/anime/37379/Chihayafuru_3,TV,24,Oct 2019,Mar 2020
+176,8.45,Steins;Gate Movie: Fuka Ryouiki no Déjà vu,11577,https://myanimelist.net/anime/11577/Steins_Gate_Movie__Fuka_Ryouiki_no_Déjà_vu,Movie,1,Apr 2013,Apr 2013
+177,8.45,Kimi ni Todoke 3rd Season,56538,https://myanimelist.net/anime/56538/Kimi_ni_Todoke_3rd_Season,ONA,5,Aug 2024,Aug 2024
+178,8.45,Owarimonogatari,31181,https://myanimelist.net/anime/31181/Owarimonogatari,TV,12,Oct 2015,Dec 2015
+179,8.44,JoJo no Kimyou na Bouken Part 3: Stardust Crusaders - Egypt-hen,26055,https://myanimelist.net/anime/26055/JoJo_no_Kimyou_na_Bouken_Part_3__Stardust_Crusaders_-_Egypt-hen,TV,24,Jan 2015,Jun 2015
+180,8.44,Pluto,35737,https://myanimelist.net/anime/35737/Pluto,ONA,8,Oct 2023,Oct 2023
+181,8.44,Re:Zero kara Hajimeru Isekai Seikatsu 3rd Season,54857,https://myanimelist.net/anime/54857/Re_Zero_kara_Hajimeru_Isekai_Seikatsu_3rd_Season,TV,16,Oct 2024,Mar 2025
+182,8.44,Chainsaw Man,44511,https://myanimelist.net/anime/44511/Chainsaw_Man,TV,12,Oct 2022,Dec 2022
+183,8.44,Doupo Cangqiong: Nian Fan,51039,https://myanimelist.net/anime/51039/Doupo_Cangqiong__Nian_Fan,ONA,209,Jul 2022,
+184,8.44,Grand Blue,37105,https://myanimelist.net/anime/37105/Grand_Blue,TV,12,Jul 2018,Sep 2018
+185,8.44,Spy x Family,50265,https://myanimelist.net/anime/50265/Spy_x_Family,TV,12,Apr 2022,Jun 2022
+186,8.43,Zoku Owarimonogatari,36999,https://myanimelist.net/anime/36999/Zoku_Owarimonogatari,TV,6,May 2019,Jun 2019
+187,8.43,Golden Kamuy 3rd Season,40059,https://myanimelist.net/anime/40059/Golden_Kamuy_3rd_Season,TV,12,Oct 2020,Dec 2020
+188,8.43,Haikyuu!!,20583,https://myanimelist.net/anime/20583/Haikyuu,TV,25,Apr 2014,Sep 2014
+189,8.43,Hunter x Hunter,136,https://myanimelist.net/anime/136/Hunter_x_Hunter,TV,62,Oct 1999,Mar 2001
+190,8.42,Bungou Stray Dogs 4th Season,50330,https://myanimelist.net/anime/50330/Bungou_Stray_Dogs_4th_Season,TV,13,Jan 2023,Mar 2023
+191,8.42,Gintama: Yorinuki Gintama-san on Theater 2D,21899,https://myanimelist.net/anime/21899/Gintama__Yorinuki_Gintama-san_on_Theater_2D,Movie,2,Aug 2012,Aug 2012
+192,8.42,Karakai Jouzu no Takagi-san Movie,49722,https://myanimelist.net/anime/49722/Karakai_Jouzu_no_Takagi-san_Movie,Movie,1,Jun 2022,Jun 2022
+193,8.42,Kimetsu no Yaiba,38000,https://myanimelist.net/anime/38000/Kimetsu_no_Yaiba,TV,26,Apr 2019,Sep 2019
+194,8.42,Kono Oto Tomare! Part 2,38889,https://myanimelist.net/anime/38889/Kono_Oto_Tomare_Part_2,TV,13,Oct 2019,Dec 2019
+195,8.42,Koukaku Kidoutai: Stand Alone Complex,467,https://myanimelist.net/anime/467/Koukaku_Kidoutai__Stand_Alone_Complex,TV,26,Oct 2002,Oct 2003
+196,8.42,Mushishi Zoku Shou: Odoro no Michi,24687,https://myanimelist.net/anime/24687/Mushishi_Zoku_Shou__Odoro_no_Michi,Special,1,Aug 2014,Aug 2014
+197,8.42,Natsume Yuujinchou Movie: Utsusemi ni Musubu,36538,https://myanimelist.net/anime/36538/Natsume_Yuujinchou_Movie__Utsusemi_ni_Musubu,Movie,1,Sep 2018,Sep 2018
+198,8.42,Re:Zero kara Hajimeru Isekai Seikatsu 2nd Season Part 2,42203,https://myanimelist.net/anime/42203/Re_Zero_kara_Hajimeru_Isekai_Seikatsu_2nd_Season_Part_2,TV,12,Jan 2021,Mar 2021
+199,8.42,Shingeki no Kyojin: Kuinaki Sentaku,25781,https://myanimelist.net/anime/25781/Shingeki_no_Kyojin__Kuinaki_Sentaku,OVA,2,Dec 2014,Apr 2015
+200,8.42,Tian Guan Cifu,40730,https://myanimelist.net/anime/40730/Tian_Guan_Cifu,ONA,11,Oct 2020,Jan 2021
+201,8.42,Violet Evergarden Gaiden: Eien to Jidou Shuki Ningyou,39741,https://myanimelist.net/anime/39741/Violet_Evergarden_Gaiden__Eien_to_Jidou_Shuki_Ningyou,Movie,1,Sep 2019,Sep 2019
+202,8.42,Wu Liuqi: Xuanwu Guo Pian,45556,https://myanimelist.net/anime/45556/Wu_Liuqi__Xuanwu_Guo_Pian,ONA,10,Jan 2021,May 2021
+203,8.41,Saenai Heroine no Sodatekata Fine,36885,https://myanimelist.net/anime/36885/Saenai_Heroine_no_Sodatekata_Fine,Movie,1,Oct 2019,Oct 2019
+204,8.41,Saiki Kusuo no Ψ-nan,33255,https://myanimelist.net/anime/33255/Saiki_Kusuo_no_Ψ-nan,TV,120,Jul 2016,Dec 2016
+205,8.41,Saiki Kusuo no Ψ-nan 2,34612,https://myanimelist.net/anime/34612/Saiki_Kusuo_no_Ψ-nan_2,TV,24,Jan 2018,Jun 2018
+206,8.41,Kono Subarashii Sekai ni Shukufuku wo! Movie: Kurenai Densetsu,38040,https://myanimelist.net/anime/38040/Kono_Subarashii_Sekai_ni_Shukufuku_wo_Movie__Kurenai_Densetsu,Movie,1,Aug 2019,Aug 2019
+207,8.41,Mononoke,2246,https://myanimelist.net/anime/2246/Mononoke,TV,12,Jul 2007,Sep 2007
+208,8.41,Mushoku Tensei II: Isekai Ittara Honki Dasu Part 2,55888,https://myanimelist.net/anime/55888/Mushoku_Tensei_II__Isekai_Ittara_Honki_Dasu_Part_2,TV,12,Apr 2024,Jul 2024
+209,8.40,Kaguya-sama wa Kokurasetai: Tensai-tachi no Renai Zunousen,37999,https://myanimelist.net/anime/37999/Kaguya-sama_wa_Kokurasetai__Tensai-tachi_no_Renai_Zunousen,TV,12,Jan 2019,Mar 2019
+210,8.40,Kamisama Hajimemashita: Kako-hen,30709,https://myanimelist.net/anime/30709/Kamisama_Hajimemashita__Kako-hen,OVA,4,Aug 2015,Aug 2016
+211,8.40,Natsume Yuujinchou Roku Specials,36275,https://myanimelist.net/anime/36275/Natsume_Yuujinchou_Roku_Specials,Special,2,Sep 2017,Oct 2017
+212,8.39,Jujutsu Kaisen 0 Movie,48561,https://myanimelist.net/anime/48561/Jujutsu_Kaisen_0_Movie,Movie,1,Dec 2021,Dec 2021
+213,8.39,Major S5,5028,https://myanimelist.net/anime/5028/Major_S5,TV,25,Jan 2009,Jun 2009
+214,8.39,Ramayana: The Legend of Prince Rama,4921,https://myanimelist.net/anime/4921/Ramayana__The_Legend_of_Prince_Rama,Movie,1,Jan 1993,Jan 1993
+215,8.39,Blue Giant,50183,https://myanimelist.net/anime/50183/Blue_Giant,Movie,1,Feb 2023,Feb 2023
+216,8.39,Houseki no Kuni,35557,https://myanimelist.net/anime/35557/Houseki_no_Kuni,TV,12,Oct 2017,Dec 2017
+217,8.39,Sayonara no Asa ni Yakusoku no Hana wo Kazarou,35851,https://myanimelist.net/anime/35851/Sayonara_no_Asa_ni_Yakusoku_no_Hana_wo_Kazarou,Movie,1,Feb 2018,Feb 2018
+218,8.39,Xian Ni,55809,https://myanimelist.net/anime/55809/Xian_Ni,ONA,128,Sep 2023,
+219,8.38,Violet Evergarden: Recollections,53672,https://myanimelist.net/anime/53672/Violet_Evergarden__Recollections,Special,1,Oct 2021,Oct 2021
+220,8.38,Vivy: Fluorite Eye&#039;s Song,46095,https://myanimelist.net/anime/46095/Vivy__Fluorite_Eyes_Song,TV,13,Apr 2021,Jun 2021
+221,8.38,Yuru Camp△ Movie,38475,https://myanimelist.net/anime/38475/Yuru_Camp△_Movie,Movie,1,Jul 2022,Jul 2022
+222,8.38,Josee to Tora to Sakana-tachi,40787,https://myanimelist.net/anime/40787/Josee_to_Tora_to_Sakana-tachi,Movie,1,Dec 2020,Dec 2020
+223,8.38,Kaze ga Tsuyoku Fuiteiru,37965,https://myanimelist.net/anime/37965/Kaze_ga_Tsuyoku_Fuiteiru,TV,23,Oct 2018,Mar 2019
+224,8.38,Made in Abyss Movie 2: Hourou Suru Tasogare,37515,https://myanimelist.net/anime/37515/Made_in_Abyss_Movie_2__Hourou_Suru_Tasogare,Movie,1,Jan 2019,Jan 2019
+225,8.38,Mahou Shoujo Madoka★Magica,9756,https://myanimelist.net/anime/9756/Mahou_Shoujo_Madoka★Magica,TV,12,Jan 2011,Apr 2011
+226,8.38,Chiikawa,50250,https://myanimelist.net/anime/50250/Chiikawa,,,Apr 2022,
+227,8.38,Cowboy Bebop: Tengoku no Tobira,5,https://myanimelist.net/anime/5/Cowboy_Bebop__Tengoku_no_Tobira,Movie,1,Sep 2001,Sep 2001
+228,8.38,Gintama°: Aizome Kaori-hen,32366,https://myanimelist.net/anime/32366/Gintama°__Aizome_Kaori-hen,OVA,2,Aug 2016,Nov 2016
+229,8.37,3-gatsu no Lion,31646,https://myanimelist.net/anime/31646/3-gatsu_no_Lion,TV,22,Oct 2016,Mar 2017
+230,8.37,Chihayafuru 2,14397,https://myanimelist.net/anime/14397/Chihayafuru_2,TV,25,Jan 2013,Jun 2013
+231,8.37,Cross Game,5941,https://myanimelist.net/anime/5941/Cross_Game,TV,50,Apr 2009,Mar 2010
+232,8.37,Fruits Basket: Prelude,49310,https://myanimelist.net/anime/49310/Fruits_Basket__Prelude,Movie,1,Feb 2022,Feb 2022
+233,8.37,Girls &amp; Panzer: Saishuushou Part 4,39167,https://myanimelist.net/anime/39167/Girls___Panzer__Saishuushou_Part_4,Movie,1,Oct 2023,Oct 2023
+234,8.37,Girls Band Cry,55102,https://myanimelist.net/anime/55102/Girls_Band_Cry,TV,13,Apr 2024,Jun 2024
+235,8.37,Haikyuu!! To the Top,38883,https://myanimelist.net/anime/38883/Haikyuu_To_the_Top,TV,13,Jan 2020,Apr 2020
+236,8.37,Tunshi Xingkong 3rd Season,56523,https://myanimelist.net/anime/56523/Tunshi_Xingkong_3rd_Season,ONA,33,Sep 2022,Apr 2023
+237,8.37,Yofukashi no Uta Season 2,58390,https://myanimelist.net/anime/58390/Yofukashi_no_Uta_Season_2,TV,12,Jul 2025,Sep 2025
+238,8.37,Kara no Kyoukai Movie 7: Satsujin Kousatsu (Go),5205,https://myanimelist.net/anime/5205/Kara_no_Kyoukai_Movie_7__Satsujin_Kousatsu_Go,Movie,1,Aug 2009,Aug 2009
+239,8.37,Karakai Jouzu no Takagi-san 3,49721,https://myanimelist.net/anime/49721/Karakai_Jouzu_no_Takagi-san_3,TV,12,Jan 2022,Mar 2022
+240,8.37,Mahou Shoujo Madoka★Magica Movie 2: Eien no Monogatari,11979,https://myanimelist.net/anime/11979/Mahou_Shoujo_Madoka★Magica_Movie_2__Eien_no_Monogatari,Movie,1,Oct 2012,Oct 2012
+241,8.37,Medalist,55318,https://myanimelist.net/anime/55318/Medalist,TV,13,Jan 2025,Mar 2025
+242,8.36,Initial D First Stage,185,https://myanimelist.net/anime/185/Initial_D_First_Stage,TV,26,Apr 1998,Dec 1998
+243,8.36,K-On! Movie,9617,https://myanimelist.net/anime/9617/K-On_Movie,Movie,1,Dec 2011,Dec 2011
+244,8.36,Kizumonogatari I: Tekketsu-hen,9260,https://myanimelist.net/anime/9260/Kizumonogatari_I__Tekketsu-hen,Movie,1,Jan 2016,Jan 2016
+245,8.36,Barakamon,22789,https://myanimelist.net/anime/22789/Barakamon,TV,12,Jul 2014,Sep 2014
+246,8.36,Gintama: Shiroyasha Koutan,6945,https://myanimelist.net/anime/6945/Gintama__Shiroyasha_Koutan,Special,1,Sep 2008,Sep 2008
+247,8.36,Shinseiki Evangelion,30,https://myanimelist.net/anime/30/Shinseiki_Evangelion,TV,26,Oct 1995,Mar 1996
+248,8.36,Tunshi Xingkong 4th Season,56524,https://myanimelist.net/anime/56524/Tunshi_Xingkong_4th_Season,ONA,123,Oct 2023,
+249,8.35,Tensei shitara Slime Datta Ken 2nd Season,39551,https://myanimelist.net/anime/39551/Tensei_shitara_Slime_Datta_Ken_2nd_Season,TV,12,Jan 2021,Mar 2021
+250,8.35,Versailles no Bara,338,https://myanimelist.net/anime/338/Versailles_no_Bara,TV,40,Oct 1979,Sep 1980
+251,8.35,Violet Evergarden: Kitto &quot;Ai&quot; wo Shiru Hi ga Kuru no Darou,37095,https://myanimelist.net/anime/37095/Violet_Evergarden__Kitto_Ai_wo_Shiru_Hi_ga_Kuru_no_Darou,Special,1,Jul 2018,Jul 2018
+252,8.35,Yahari Ore no Seishun Love Comedy wa Machigatteiru. Kan,39547,https://myanimelist.net/anime/39547/Yahari_Ore_no_Seishun_Love_Comedy_wa_Machigatteiru_Kan,TV,12,Jul 2020,Sep 2020
+253,8.35,Kaze no Tani no Nausicaä,572,https://myanimelist.net/anime/572/Kaze_no_Tani_no_Nausicaä,Movie,1,Mar 1984,Mar 1984
+254,8.35,Kimetsu no Yaiba: Mugen Ressha-hen,49926,https://myanimelist.net/anime/49926/Kimetsu_no_Yaiba__Mugen_Ressha-hen,TV,7,Oct 2021,Nov 2021
+255,8.35,Kono Subarashii Sekai ni Shukufuku wo! 3,49458,https://myanimelist.net/anime/49458/Kono_Subarashii_Sekai_ni_Shukufuku_wo_3,TV,11,Apr 2024,Jun 2024
+256,8.35,Meitantei Conan Movie 26: Kurogane no Submarine,53540,https://myanimelist.net/anime/53540/Meitantei_Conan_Movie_26__Kurogane_no_Submarine,Movie,1,Apr 2023,Apr 2023
+257,8.35,Non Non Biyori Nonstop,39808,https://myanimelist.net/anime/39808/Non_Non_Biyori_Nonstop,TV,12,Jan 2021,Mar 2021
+258,8.35,Baccano!,2251,https://myanimelist.net/anime/2251/Baccano,TV,13,Jul 2007,Nov 2007
+259,8.35,Douluo Dalu 2nd Season,37822,https://myanimelist.net/anime/37822/Douluo_Dalu_2nd_Season,ONA,237,Dec 2018,Jun 2023
+260,8.34,86,41457,https://myanimelist.net/anime/41457/86,TV,11,Apr 2021,Jun 2021
+261,8.34,Ashita no Joe,2402,https://myanimelist.net/anime/2402/Ashita_no_Joe,TV,79,Apr 1970,Sep 1971
+262,8.34,Fumetsu no Anata e,41025,https://myanimelist.net/anime/41025/Fumetsu_no_Anata_e,TV,20,Apr 2021,Aug 2021
+263,8.34,Hellsing Ultimate,777,https://myanimelist.net/anime/777/Hellsing_Ultimate,OVA,10,Feb 2006,Dec 2012
+264,8.34,Hibike! Euphonium 2,31988,https://myanimelist.net/anime/31988/Hibike_Euphonium_2,TV,13,Oct 2016,Dec 2016
+265,8.34,IDOLiSH7 Third Beat! Part 2,46654,https://myanimelist.net/anime/46654/IDOLiSH7_Third_Beat_Part_2,TV,17,Oct 2022,Feb 2023
+266,8.34,Mushoku Tensei: Isekai Ittara Honki Dasu,39535,https://myanimelist.net/anime/39535/Mushoku_Tensei__Isekai_Ittara_Honki_Dasu,TV,11,Jan 2021,Mar 2021
+267,8.33,Natsume Yuujinchou: Itsuka Yuki no Hi ni,20651,https://myanimelist.net/anime/20651/Natsume_Yuujinchou__Itsuka_Yuki_no_Hi_ni,OVA,1,Feb 2014,Feb 2014
+268,8.33,Psycho-Pass,13601,https://myanimelist.net/anime/13601/Psycho-Pass,TV,22,Oct 2012,Mar 2013
+269,8.33,Re:Zero kara Hajimeru Isekai Seikatsu 2nd Season,39587,https://myanimelist.net/anime/39587/Re_Zero_kara_Hajimeru_Isekai_Seikatsu_2nd_Season,TV,13,Jul 2020,Sep 2020
+270,8.33,Wu Shan Wu Xing: Xichuan Huan Zi Lin,50407,https://myanimelist.net/anime/50407/Wu_Shan_Wu_Xing__Xichuan_Huan_Zi_Lin,ONA,4,Jul 2023,Aug 2023
+271,8.33,Bakuman. 2nd Season,10030,https://myanimelist.net/anime/10030/Bakuman_2nd_Season,TV,25,Oct 2011,Mar 2012
+272,8.33,Bocchi the Rock! Movie,55357,https://myanimelist.net/anime/55357/Bocchi_the_Rock_Movie,Movie,2,Jun 2024,Aug 2024
+273,8.32,Bakemonogatari,5081,https://myanimelist.net/anime/5081/Bakemonogatari,TV,15,Jul 2009,Jun 2010
+274,8.32,Fate/stay night: Unlimited Blade Works 2nd Season,28701,https://myanimelist.net/anime/28701/Fate_stay_night__Unlimited_Blade_Works_2nd_Season,TV,13,Apr 2015,Jun 2015
+275,8.32,Ginga Eiyuu Densetsu: Die Neue These - Gekitotsu,42886,https://myanimelist.net/anime/42886/Ginga_Eiyuu_Densetsu__Die_Neue_These_-_Gekitotsu,Movie,12,Mar 2022,May 2022
+276,8.32,Ginga Eiyuu Densetsu: Die Neue These - Sakubou,51805,https://myanimelist.net/anime/51805/Ginga_Eiyuu_Densetsu__Die_Neue_These_-_Sakubou,Movie,12,Sep 2022,Nov 2022
+277,8.32,Kidou Senshi Gundam: The Origin,10937,https://myanimelist.net/anime/10937/Kidou_Senshi_Gundam__The_Origin,OVA,6,Feb 2015,May 2018
+278,8.32,Kiseijuu: Sei no Kakuritsu,22535,https://myanimelist.net/anime/22535/Kiseijuu__Sei_no_Kakuritsu,TV,24,Oct 2014,Mar 2015
+279,8.32,One Outs,5040,https://myanimelist.net/anime/5040/One_Outs,TV,25,Oct 2008,Apr 2009
+280,8.32,Usagi Drop,10162,https://myanimelist.net/anime/10162/Usagi_Drop,TV,11,Jul 2011,Sep 2011
+281,8.31,Romeo no Aoi Sora,2559,https://myanimelist.net/anime/2559/Romeo_no_Aoi_Sora,TV,33,Jan 1995,Dec 1995
+282,8.31,Sasaki to Miyano Movie: Sotsugyou-hen,51440,https://myanimelist.net/anime/51440/Sasaki_to_Miyano_Movie__Sotsugyou-hen,Movie,1,Feb 2023,Feb 2023
+283,8.31,Tunshi Xingkong 2nd Season,49571,https://myanimelist.net/anime/49571/Tunshi_Xingkong_2nd_Season,ONA,26,Dec 2021,Sep 2022
+284,8.31,Uchuu Senkan Yamato 2199,12029,https://myanimelist.net/anime/12029/Uchuu_Senkan_Yamato_2199,OVA,26,May 2012,Oct 2013
+285,8.31,Doraemon Movie 31: Shin Nobita to Tetsujin Heidan - Habatake Tenshi-tachi,10534,https://myanimelist.net/anime/10534/Doraemon_Movie_31__Shin_Nobita_to_Tetsujin_Heidan_-_Habatake_Tenshi-tachi,Movie,1,Mar 2011,Mar 2011
+286,8.31,Dr. Stone: New World Part 2,55644,https://myanimelist.net/anime/55644/Dr_Stone__New_World_Part_2,TV,11,Oct 2023,Dec 2023
+287,8.31,Hunter x Hunter: Original Video Animation,137,https://myanimelist.net/anime/137/Hunter_x_Hunter__Original_Video_Animation,OVA,8,Jan 2002,Apr 2002
+288,8.31,Major S6,7655,https://myanimelist.net/anime/7655/Major_S6,TV,25,Apr 2010,Sep 2010
+289,8.31,Natsume Yuujinchou Go Specials,34534,https://myanimelist.net/anime/34534/Natsume_Yuujinchou_Go_Specials,Special,2,Mar 2017,Apr 2017
+290,8.31,NHK ni Youkoso!,1210,https://myanimelist.net/anime/1210/NHK_ni_Youkoso,TV,24,Jul 2006,Dec 2006
+291,8.30,Luo Xiaohei Zhanji (Movie),40211,https://myanimelist.net/anime/40211/Luo_Xiaohei_Zhanji_Movie,Movie,1,Sep 2019,Sep 2019
+292,8.30,Natsume Yuujinchou,4081,https://myanimelist.net/anime/4081/Natsume_Yuujinchou,TV,13,Jul 2008,Sep 2008
+293,8.30,Ookami to Koushinryou II,5341,https://myanimelist.net/anime/5341/Ookami_to_Koushinryou_II,TV,12,Jul 2009,Sep 2009
+294,8.30,Seishun Buta Yarou wa Randoseru Girl no Yume wo Minai,54870,https://myanimelist.net/anime/54870/Seishun_Buta_Yarou_wa_Randoseru_Girl_no_Yume_wo_Minai,Movie,1,Dec 2023,Dec 2023
+295,8.30,Shiguang Dailiren: Yingdu Pian,56752,https://myanimelist.net/anime/56752/Shiguang_Dailiren__Yingdu_Pian,ONA,6,Dec 2024,Jan 2025
+296,8.30,Tensei shitara Slime Datta Ken 2nd Season Part 2,41487,https://myanimelist.net/anime/41487/Tensei_shitara_Slime_Datta_Ken_2nd_Season_Part_2,TV,12,Jul 2021,Sep 2021
+297,8.30,Boku dake ga Inai Machi,31043,https://myanimelist.net/anime/31043/Boku_dake_ga_Inai_Machi,TV,12,Jan 2016,Mar 2016
+298,8.30,Diamond no Ace: Second Season,30230,https://myanimelist.net/anime/30230/Diamond_no_Ace__Second_Season,TV,51,Apr 2015,Mar 2016
+299,8.30,Evangelion Movie 2: Ha,3784,https://myanimelist.net/anime/3784/Evangelion_Movie_2__Ha,Movie,1,Jul 2009,Jul 2009
+300,8.29,Ano Hi Mita Hana no Namae wo Bokutachi wa Mada Shiranai.,9989,https://myanimelist.net/anime/9989/Ano_Hi_Mita_Hana_no_Namae_wo_Bokutachi_wa_Mada_Shiranai,TV,11,Apr 2011,Jun 2011

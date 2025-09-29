@@ -95,9 +95,9 @@ def get_more_data(csv_file: str = 'anime_data.csv', output_file: str = 'anime_da
 
         reader = csv.reader(csv_file)
 
-        for i, row in enumerate(reader, start=2):
+        for i, row in enumerate(reader):
             link = row[4]
-            if not link:
+            if not link or i == 0:
                 print(f'[{i}] No Link in row, skipping.')
                 continue
 
@@ -114,7 +114,7 @@ def get_more_data(csv_file: str = 'anime_data.csv', output_file: str = 'anime_da
                 row.append(status)
 
                 # Premiered
-                premiered_pattern = r'<span[^>]*>\s*Premiered:\s*</span>\s*([^<]+)'
+                premiered_pattern = r'<span[^>]*>\s*Premiered:\s*</span>\s*<a[^>]*>([^<]+)</a>'
                 premiered = re.search(premiered_pattern, content)
                 premiered = premiered.group(1).strip() if premiered else 'N/A'
                 row.append(premiered)
@@ -150,10 +150,20 @@ def get_more_data(csv_file: str = 'anime_data.csv', output_file: str = 'anime_da
                 row.append(source)
 
                 # Genres
-                genres_pattern = r'<span[^>]*>\s*Genres:\s*</span>\s*([^<]+)'
-                genres = re.search(genres_pattern, content)
-                genres = genres.group(1).strip() if genres else 'N/A'
-                row.append(genres)
+                # genres_pattern = r'<span[^>]*>\s*Genres:\s*</span>\s*([^<]+)'
+                # genres = re.search(genres_pattern, content)
+                # genres = genres.group(1).strip() if genres else 'N/A'
+                # row.append(genres)
+
+                # Vse žanre
+                block = re.search(r'<span[^>]*>\s*Genres:\s*</span>(.*?)</div>', content, re.S)
+                if block:
+                    # Vse žanre v list
+                    genres = re.findall(r'<a [^>]*>(.*?)</a>', block.group(1))
+                    if genres:
+                        row.append(genres)
+                    else:
+                        row.append("N/A")
 
                 # Demographics
                 demographics_pattern = r'<span[^>]*>\s*Demographics:\s*</span>\s*([^<]+)'
@@ -191,31 +201,34 @@ def get_more_data(csv_file: str = 'anime_data.csv', output_file: str = 'anime_da
                 favorites = favorites.group(1).strip() if favorites else 'N/A'
                 row.append(favorites)
 
+                # Aired
+                # TODO: For consistency change the else to None
+                aired_pattern = r'<span[^>]*>\s*Aired:\s*</span>\s*([A-Za-z]{3} \d{1,2}, \d{4})\s+to\s+([A-Za-z]{3} \d{1,2}, \d{4})'
+                aired = re.search(aired_pattern, content)
+                aired_start = aired.group(1).strip() if aired else 'N/A'
+                aired_end = aired.group(2).strip() if aired else 'N/A'
+                row.append(aired_start)
+                row.append(aired_end)
+
+
             except requests.RequestException as e:
                 print(f'[{i}] Request failed for {link}: {e}')
                 continue
 
             csv_updates.append(row)
-            print('Somethign is going on')
+            print('Somethign is going on:', i)
 
     with open(output_file, mode='w', encoding=encoding, newline='') as csv_out:
         writer = csv.writer(csv_out)
-        writer.writerow(['Rank', 'Score', 'Name', 'ID', 'Link', 'Type', 'Episodes', 'Start Date', 'End Date', 'Status', 'Premiered', 'Broadcast', 'Producers', 'Licensors', 'Studios', 'Source', 'Genres', 'Demographics', 'Duration', 'Rating', 'Popularity', 'Members', 'Favorites'])
+        writer.writerow(['Rank', 'Score', 'Name', 'ID', 'Link', 'Type', 'Episodes', 'Start Date', 'End Date', 'Status', 'Premiered', 'Broadcast', 'Producers', 'Licensors', 'Studios', 'Source', 'Genres', 'Demographics', 'Duration', 'Rating', 'Popularity', 'Members', 'Favorites', 'Aired start', 'Aired end'])
         for row in csv_updates:
             writer.writerow(row)
 
     print(f'Updated CSV written to {output_file}')
 
 
-def make_csv_from_more_dump(csv_file: str = 'anime_data.csv', dump_file: str = 'dump_premium.txt'):
-    # Read dump file
-    # Parse it
-    # Write to csv
-    pass
-
-
 # Poženemo funkcije
 
-dump_data(total_number_of_anime=100)
-make_csv_from_dump()
+# dump_data(total_number_of_anime=300)
+# make_csv_from_dump()
 get_more_data()
