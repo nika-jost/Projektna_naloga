@@ -38,7 +38,7 @@ def dump_data(filename: str = 'dump.txt', total_number_of_anime: int = 50):
                 print(f'Napaka pri dostopu do {new_url}: {e}')
                 continue
 
-            time.sleep(1) # Če dostopamo do spletne strani prevečkrat v zelo kratkem času, bo spletna stran mislila, da jo hočemo podreti.
+            time.sleep(5) # Če dostopamo do spletne strani prevečkrat v zelo kratkem času, bo spletna stran mislila, da jo hočemo podreti.
     print(f"Sem prensel v datoteko: {filename}")
 
 
@@ -85,13 +85,19 @@ def make_csv_from_dump(input_file: str = 'dump.txt', output_csv_file: str = 'ani
     print(f'CSV datoteka ustvarjena: {output_csv_file}')
 
 
-def get_more_data(csv_file: str = 'anime_data.csv', output_file: str = 'anime_data_premium.csv'):
+def get_more_data(csv_file_name: str = 'anime_data.csv', output_file: str = 'anime_data_premium.csv'):
     """
     For each Link in the CSV, fetch the page, extract Status, and append the HTML to dump_file.
     Prints the extracted Status (or 'N/A' if missing).
     """
+
+    with open(output_file, mode='w', encoding=encoding, newline='') as csv_out:
+        writer = csv.writer(csv_out)
+        writer.writerow(['Rank', 'Score', 'Name', 'ID', 'Link', 'Type', 'Episodes', 'Start Date', 'End Date', 'Status', 'Premiered', 'Broadcast', 'Producers', 'Licensors', 'Studios', 'Source', 'Genres', 'Demographics', 'Duration', 'Rating', 'Popularity', 'Members', 'Favorites', 'Aired start', 'Aired end'])
+    csv_out.close()
+
     csv_updates = []
-    with open(csv_file, mode='r', encoding=encoding) as csv_file:
+    with open(csv_file_name, mode='r', encoding=encoding) as csv_file:
 
         reader = csv.reader(csv_file)
 
@@ -218,17 +224,21 @@ def get_more_data(csv_file: str = 'anime_data.csv', output_file: str = 'anime_da
             csv_updates.append(row)
             print('Somethign is going on:', i)
 
-    with open(output_file, mode='w', encoding=encoding, newline='') as csv_out:
-        writer = csv.writer(csv_out)
-        writer.writerow(['Rank', 'Score', 'Name', 'ID', 'Link', 'Type', 'Episodes', 'Start Date', 'End Date', 'Status', 'Premiered', 'Broadcast', 'Producers', 'Licensors', 'Studios', 'Source', 'Genres', 'Demographics', 'Duration', 'Rating', 'Popularity', 'Members', 'Favorites', 'Aired start', 'Aired end'])
-        for row in csv_updates:
-            writer.writerow(row)
+            if i % 10 == 0:
+                with open(output_file, mode='w', encoding=encoding, newline='') as csv_out:
+                    writer = csv.writer(csv_out)
+                    for row in csv_updates:
+                        writer.writerow(row)
+                csv_out.close()
+                print("Wrote to file")
+
+            time.sleep(5)
 
     print(f'Updated CSV written to {output_file}')
 
 
 # Poženemo funkcije
 
-# dump_data(total_number_of_anime=300)
+# dump_data(total_number_of_anime=6000)
 # make_csv_from_dump()
-get_more_data()
+# get_more_data()

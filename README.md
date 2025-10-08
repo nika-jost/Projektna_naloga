@@ -53,28 +53,28 @@ py -m pip install requests
     * Ali ima studio nizko varianco `Score` (konsistentna kakovost) v primerjavi z drugimi?
     * Test: Levene/Brown–Forsythe za varianco; graf: “error bars”.
 
-Rank
-Score
+Rank 
+Score ✅ ✅
 Name
 ID
 Link
 Type
-Episodes
-Start Date
-End Date
+Episodes (stevilo epizod) ✅
+Start Date ✅
+End Date ✅
 Status
-Premiered
+Premiered ✅
 Broadcast
 Producers
 Licensors
 Studios
 Source
-Genres
+Genres ✅
 Demographics
 Duration
 Rating
 Popularity
-Members
+Members ✅
 Favorites
 
 - [x] complete get_data.py. Get all the neded data from the website.
