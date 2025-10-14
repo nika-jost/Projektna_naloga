@@ -181,9 +181,16 @@ def get_more_data(csv_file_name: str = 'anime_data.csv', output_file: str = 'ani
                         row.append("N/A")
 
                 # Demographics
-                demographics_pattern = r'<span[^>]*>\s*Demographics:\s*</span>\s*([^<]+)'
-                demographics = re.search(demographics_pattern, content)
-                demographics = demographics.group(1).strip() if demographics else 'N/A'
+                demographics_pattern = r'<span[^>]*>\s*Demographic:\s*</span>(.*?)</div>'
+                demographics_match = re.search(demographics_pattern, content, flags=re.S)
+
+                if demographics_match:
+                    block = demographics_match.group(1)
+                    demographic_list = re.findall(r'>([^<]+)</a>', block)
+                    demographics = ", ".join(d.strip() for d in demographic_list)
+                else:
+                    demographics = 'N/A'
+
                 row.append(demographics)
 
                 # Duration
