@@ -241,7 +241,7 @@ def get_more_data(csv_file_name: str = 'anime_data.csv', output_file: str = 'ani
             print('Somethign is going on:', i)
 
             if i % 10 == 0:
-                with open(output_file, mode='w', encoding=encoding, newline='') as csv_out:
+                with open(output_file, mode='a', encoding=encoding, newline='') as csv_out:
                     writer = csv.writer(csv_out)
                     for row in csv_updates:
                         writer.writerow(row)
