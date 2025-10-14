@@ -144,9 +144,18 @@ def get_more_data(csv_file_name: str = 'anime_data.csv', output_file: str = 'ani
                 row.append(licensors)
 
                 # Studios
-                studios_pattern = r'<span[^>]*>\s*Studios:\s*</span>\s*([^<]+)'
-                studios = re.search(studios_pattern, content)
-                studios = studios.group(1).strip() if studios else 'N/A'
+                # studios_pattern = r'<span[^>]*>\s*Studios:\s*</span>\s*([^<]+)'
+                # studios = re.search(studios_pattern, content)
+                # studios = studios.group(1).strip() if studios else 'N/A'
+                # row.append(studios)
+
+                studios_pattern = r'<span[^>]*>\s*Studios:\s*</span>(.*?)</div>'
+                studios_match = re.search(studios_pattern, content, flags=re.S)
+
+                studios = "N/A"
+                if studios_match:
+                    studios_list = re.findall(r'>([^<]+)</a>', studios_match.group(1))
+                    studios = ", ".join(s.strip() for s in studios_list)
                 row.append(studios)
 
                 # Source
@@ -241,4 +250,4 @@ def get_more_data(csv_file_name: str = 'anime_data.csv', output_file: str = 'ani
 
 # dump_data(total_number_of_anime=6000)
 # make_csv_from_dump()
-# get_more_data()
+get_more_data()
