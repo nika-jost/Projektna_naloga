@@ -159,10 +159,23 @@ def get_more_data(csv_file_name: str = 'anime_data.csv', output_file: str = 'ani
                 row.append(studios)
 
                 # Source
-                source_pattern = r'<span[^>]*>\s*Source:\s*</span>\s*([^<]+)'
-                source = re.search(source_pattern, content)
-                source = source.group(1).strip() if source else 'N/A'
+                source_pattern = r'<span[^>]*>\s*Source:\s*</span>(.*?)</div>'
+                source_block = re.search(source_pattern, content, flags=re.S)
+
+                source = "N/A"
+                if source_block:
+                    # First try <a> tags
+                    sources = re.findall(r'<a[^>]*>([^<]+)</a>', source_block.group(1))
+                    if sources:
+                        source = ", ".join(s.strip() for s in sources)
+                    else:
+                        # Fallback to plain text (if no <a>)
+                        plain = re.sub(r'<.*?>', '', source_block.group(1)).strip()
+                        if plain:
+                            source = plain
+
                 row.append(source)
+
 
                 # Genres
                 # genres_pattern = r'<span[^>]*>\s*Genres:\s*</span>\s*([^<]+)'
@@ -170,15 +183,19 @@ def get_more_data(csv_file_name: str = 'anime_data.csv', output_file: str = 'ani
                 # genres = genres.group(1).strip() if genres else 'N/A'
                 # row.append(genres)
 
-                # Vse žanre
-                block = re.search(r'<span[^>]*>\s*Genres:\s*</span>(.*?)</div>', content, re.S)
+                # Vse žanre ("Genre" in "Genres")
+                block = re.search(
+                    r'<span[^>]*class="dark_text"[^>]*>\s*Genres?:\s*</span>(.*?)</div>',
+                    content, flags=re.S | re.I
+                )
                 if block:
-                    # Vse žanre v list
-                    genres = re.findall(r'<a [^>]*>(.*?)</a>', block.group(1))
-                    if genres:
-                        row.append(genres)
-                    else:
-                        row.append("N/A")
+                    genres = re.findall(r'<a[^>]*>([^<]+)</a>', block.group(1))
+                    if not genres:
+                        genres = re.findall(r'<span[^>]*itemprop="genre"[^>]*>([^<]+)</span>', block.group(1))
+                    genres_str = ", ".join(g.strip() for g in genres) if genres else "N/A"
+                else:
+                    genres_str = "N/A"
+                row.append(genres_str)
 
                 # Demographics
                 demographics_pattern = r'<span[^>]*>\s*Demographic:\s*</span>(.*?)</div>'
@@ -238,13 +255,13 @@ def get_more_data(csv_file_name: str = 'anime_data.csv', output_file: str = 'ani
                 continue
 
             csv_updates.append(row)
-            print('Somethign is going on:', i)
 
             if i % 10 == 0:
                 with open(output_file, mode='a', encoding=encoding, newline='') as csv_out:
                     writer = csv.writer(csv_out)
                     for row in csv_updates:
                         writer.writerow(row)
+                    csv_updates = []
                 csv_out.close()
                 print("Wrote to file")
 
